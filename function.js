@@ -84,7 +84,7 @@ updateAscend();
 updatePSL();
 
    
-    const possibleNumbers = [1, 5, 10, 25, 50, 100, 500,1000,10000,5000,-20000, -1, -5, -10, -25, -50, -100, -500, -200];
+    const possibleNumbers = [1, 5, 10, 25, 50, 100, 500,1000,5000,-20000,10000,30000, -1, -5, -10, -25, -50, -100, -500, -200];
     const totalItems = 100;
 
     for (let i = 0; i < totalItems; i++) {
