@@ -1,0 +1,103 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    #3c39e6 0%, 
+    #217a76 50%, 
+    #1eff00 100%);
+  background-size: 300% 300%;
+  animation: gradientFlow 20s ease infinite;
+  opacity: 0.7; 
+  z-index: -1; 
+  transition: background 1.5s ease; 
+}
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.salfetka {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+.saltxt {
+    
+    
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    
+}
+.Ptxt {
+    
+    margin-top: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: block;
+    
+    
+}
+.buttonRoll{
+    font-size: 1.7rem;
+    color:aliceblue;
+    display: block;
+    
+    background: #fa3d3d;
+    border-width: 0cap;
+    width: 50%;
+    border-radius: 12%;
+    margin-top: 20px;
+    margin: 10px auto;
+}
+.gallery {
+    display: flex;
+    gap: 15px;
+    margin: 1%;
+}
+
+#cont {
+    display: block;
+    width: 31%;
+    border: 2px solid black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.cont-content {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: blur(5px);
+}
